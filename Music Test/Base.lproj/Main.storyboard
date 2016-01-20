@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Submit View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" userLabel="Submit View Controller" customClass="MTSubmitVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="redraw" image="vinyl-record-background" translatesAutoresizingMaskIntoConstraints="NO" id="XNf-Co-txd">
+                                <rect key="frame" x="-4" y="0.0" width="328" height="568"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cUf-nf-Qgq" userLabel="Container View">
+                                <rect key="frame" x="0.0" y="165" width="320" height="239"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JlC-Dx-Pjg" userLabel="Banjo Item" customClass="MTInstrumentItem">
+                                        <rect key="frame" x="243" y="0.0" width="69" height="239"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="backgroundImage" value="01"/>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="itemImage" value="banjo-311854_640"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="instrumentAlpha">
+                                                <real key="value" value="0.84999999999999998"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="itemRotateAngle">
+                                                <real key="value" value="55"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="banjoSelected:" destination="BYZ-38-t0r" eventType="touchDown" id="PF5-WL-wdL"/>
+                                        </connections>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X8M-nd-8cA" userLabel="Bass Item" customClass="MTInstrumentItem">
+                                        <rect key="frame" x="8" y="0.0" width="69" height="239"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="instrumentAlpha">
+                                                <real key="value" value="0.84999999999999998"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="backgroundImage" value="04"/>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="itemImage" value="bass-159703_640"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="itemScale">
+                                                <real key="value" value="0.75"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="bassSelected:" destination="BYZ-38-t0r" eventType="touchDown" id="OTF-9c-cYu"/>
+                                        </connections>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ot2-6L-zWu" userLabel="Guitar Item" customClass="MTInstrumentItem">
+                                        <rect key="frame" x="165" y="0.0" width="69" height="239"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="backgroundImage" value="02"/>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="itemImage" value="guitar-31374_640"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="instrumentAlpha">
+                                                <real key="value" value="0.84999999999999998"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="itemRotateAngle">
+                                                <real key="value" value="-65"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="guitarSelected:" destination="BYZ-38-t0r" eventType="touchDown" id="Pk6-zD-a74"/>
+                                        </connections>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dec-lD-f8e" userLabel="Electric Item" customClass="MTInstrumentItem">
+                                        <rect key="frame" x="87" y="0.0" width="69" height="239"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="instrumentAlpha">
+                                                <real key="value" value="0.84999999999999998"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="backgroundImage" value="03"/>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="itemImage" value="electric-guitar-154123_640"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="itemRotateAngle">
+                                                <real key="value" value="-50"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="electricSelected:" destination="BYZ-38-t0r" eventType="touchDown" id="jpq-yG-elE"/>
+                                        </connections>
+                                    </view>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="0Iy-dw-gQy">
+                                        <rect key="frame" x="142" y="101" width="37" height="37"/>
+                                        <color key="color" red="1" green="0.90050859900000002" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="0Iy-dw-gQy" firstAttribute="centerX" secondItem="cUf-nf-Qgq" secondAttribute="centerX" id="GqB-zA-uds"/>
+                                    <constraint firstAttribute="height" constant="239" id="R3h-Pq-B2e"/>
+                                    <constraint firstAttribute="width" constant="320" id="oSD-66-aRo"/>
+                                    <constraint firstItem="0Iy-dw-gQy" firstAttribute="centerY" secondItem="cUf-nf-Qgq" secondAttribute="centerY" id="tco-er-CrJ"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick your genre" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m1V-jv-8Ol">
+                                <rect key="frame" x="-4" y="20" width="328" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="n1m-zb-msY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" red="0.87281334399999999" green="0.032928918660000001" blue="0.070703350639999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Type your name here" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SFR-Ox-bhh" customClass="MTTextField">
+                                <rect key="frame" x="68" y="518" width="184" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="184" id="DpJ-dK-sq9"/>
+                                    <constraint firstAttribute="height" constant="30" id="PgX-f0-9v6"/>
+                                </constraints>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="endEditing:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="ONT-zg-8WX"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="m1V-jv-8Ol" secondAttribute="trailing" constant="-20" id="4VN-J6-jJb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XNf-Co-txd" secondAttribute="trailing" constant="-20" id="4z7-q2-zvJ"/>
+                            <constraint firstItem="m1V-jv-8Ol" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="CJY-hM-4nN"/>
+                            <constraint firstItem="m1V-jv-8Ol" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="CcA-Ff-SFx"/>
+                            <constraint firstItem="XNf-Co-txd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="Lkf-8E-nmq"/>
+                            <constraint firstItem="XNf-Co-txd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PVj-dk-XlA"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="XNf-Co-txd" secondAttribute="bottom" id="We6-Jm-tDD"/>
+                            <constraint firstItem="SFR-Ox-bhh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bu7-Td-0Tz"/>
+                            <constraint firstItem="cUf-nf-Qgq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hby-iV-S6M"/>
+                            <constraint firstItem="XNf-Co-txd" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="k18-aZ-HEP"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="SFR-Ox-bhh" secondAttribute="bottom" constant="20" id="qfp-9k-k6b"/>
+                            <constraint firstItem="cUf-nf-Qgq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="z9D-AG-pYy"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="PVj-dk-XlA"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="activityView" destination="0Iy-dw-gQy" id="nof-nE-WoI"/>
+                        <outlet property="usernameTxtField" destination="SFR-Ox-bhh" id="FyV-cD-Cay"/>
+                        <segue destination="EeA-Od-cbB" kind="showDetail" identifier="resultDetailsVC" action="showViewController:sender:" id="8gQ-H4-12A"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="271" y="124"/>
+        </scene>
+        <!--ResultsVC-->
+        <scene sceneID="ubI-mb-1Ia">
+            <objects>
+                <viewController id="EeA-Od-cbB" customClass="MTResultsVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EBL-Fh-3eX"/>
+                        <viewControllerLayoutGuide type="bottom" id="EgK-Gd-rzh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rr3-Fy-7Gb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="redraw" image="vinyl-record-background" translatesAutoresizingMaskIntoConstraints="NO" id="ORn-kc-Dho">
+                                <rect key="frame" x="-4" y="0.0" width="328" height="568"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nig-Ve-cFL" userLabel="Container View">
+                                <rect key="frame" x="0.0" y="164" width="314" height="239"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q9j-Ao-yrf" userLabel="Guitar Progress View" customClass="MTProgressView">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="progress">
+                                                <integer key="value" value="100"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="progressAlpha">
+                                                <real key="value" value="0.69999999999999996"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="title" value="Guitare"/>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="progressImage" value="04"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LqK-2o-hkr" userLabel="Electric Progress View" customClass="MTProgressView">
+                                        <rect key="frame" x="0.0" y="60" width="320" height="55"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="progressAlpha">
+                                                <real key="value" value="0.84999999999999998"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="progress">
+                                                <integer key="value" value="50"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="progressImage" value="03"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="title" value="Electric"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ei6-fF-Z0T" userLabel="Bass Progress View" customClass="MTProgressView">
+                                        <rect key="frame" x="0.0" y="122" width="320" height="55"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="progressAlpha">
+                                                <real key="value" value="0.84999999999999998"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="progress">
+                                                <integer key="value" value="60"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="title" value="Bass"/>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="progressImage" value="02"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z1V-CR-alB" userLabel="Banjo Progress View" customClass="MTProgressView">
+                                        <rect key="frame" x="0.0" y="184" width="320" height="55"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="progressAlpha">
+                                                <real key="value" value="0.84999999999999998"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="progress">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="progressImage" value="01"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="title" value="Banjo"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="WON-jG-Hh5">
+                                        <rect key="frame" x="142" y="101" width="37" height="37"/>
+                                        <color key="color" red="1" green="0.90050859900000002" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="239" id="OLY-bv-iY4"/>
+                                    <constraint firstAttribute="width" constant="314" id="nsd-PE-aQK"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Results" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dBP-cG-dIV">
+                                <rect key="frame" x="-4" y="20" width="328" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="D3f-jp-SDd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" red="0.87281334399999999" green="0.032928918660000001" blue="0.070703350639999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username," textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kB2-9L-vu5">
+                                <rect key="frame" x="-4" y="461" width="328" height="20.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iqU-0Y-JNI">
+                                <rect key="frame" x="-4" y="490" width="328" height="20.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gbc-0H-pL1">
+                                <rect key="frame" x="126" y="68" width="68" height="53"/>
+                                <color key="backgroundColor" red="1" green="0.94955113103812605" blue="0.15084696438238043" alpha="0.73617995689655169" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="68" id="82U-Ih-ZaN"/>
+                                    <constraint firstAttribute="height" constant="53" id="jDR-pp-QtM"/>
+                                </constraints>
+                                <state key="normal" title="Close"/>
+                                <connections>
+                                    <segue destination="EeA-Od-cbB" kind="custom" customClass="DismissSegue" id="tdM-Pk-GjX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iqU-0Y-JNI" firstAttribute="leading" secondItem="rr3-Fy-7Gb" secondAttribute="leadingMargin" constant="-20" id="ACa-4M-WGM"/>
+                            <constraint firstItem="gbc-0H-pL1" firstAttribute="centerX" secondItem="rr3-Fy-7Gb" secondAttribute="centerX" id="FHu-1X-yI8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ORn-kc-Dho" secondAttribute="trailing" constant="-20" id="HzR-aL-O6q"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dBP-cG-dIV" secondAttribute="trailing" constant="-20" id="LNt-fe-BBr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="iqU-0Y-JNI" secondAttribute="trailing" constant="-20" id="Lhw-0D-8Xw"/>
+                            <constraint firstItem="dBP-cG-dIV" firstAttribute="leading" secondItem="rr3-Fy-7Gb" secondAttribute="leadingMargin" constant="-20" id="Qwy-Vi-504"/>
+                            <constraint firstItem="dBP-cG-dIV" firstAttribute="top" secondItem="EBL-Fh-3eX" secondAttribute="bottom" id="Uo8-fz-JgA"/>
+                            <constraint firstItem="iqU-0Y-JNI" firstAttribute="top" secondItem="kB2-9L-vu5" secondAttribute="bottom" constant="8.5" id="VKM-4t-tdx"/>
+                            <constraint firstItem="gbc-0H-pL1" firstAttribute="top" secondItem="dBP-cG-dIV" secondAttribute="bottom" constant="8" id="Xly-VQ-Ypt"/>
+                            <constraint firstItem="ORn-kc-Dho" firstAttribute="top" secondItem="EBL-Fh-3eX" secondAttribute="bottom" constant="-20" id="beF-ZD-vtR"/>
+                            <constraint firstItem="EgK-Gd-rzh" firstAttribute="top" secondItem="iqU-0Y-JNI" secondAttribute="bottom" constant="57" id="cwG-h6-e6q"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kB2-9L-vu5" secondAttribute="trailing" constant="-20" id="djQ-TD-qx8"/>
+                            <constraint firstItem="kB2-9L-vu5" firstAttribute="leading" secondItem="rr3-Fy-7Gb" secondAttribute="leadingMargin" constant="-20" id="l5C-fp-wtb"/>
+                            <constraint firstItem="ORn-kc-Dho" firstAttribute="leading" secondItem="rr3-Fy-7Gb" secondAttribute="leadingMargin" constant="-20" id="lb7-nC-SV1"/>
+                            <constraint firstItem="nig-Ve-cFL" firstAttribute="centerX" secondItem="rr3-Fy-7Gb" secondAttribute="centerX" constant="-3" id="tON-eD-ezx"/>
+                            <constraint firstItem="nig-Ve-cFL" firstAttribute="centerY" secondItem="rr3-Fy-7Gb" secondAttribute="centerY" id="vB1-6l-cDH"/>
+                            <constraint firstItem="EgK-Gd-rzh" firstAttribute="top" secondItem="ORn-kc-Dho" secondAttribute="bottom" id="xZA-Dz-YFL"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="activityView" destination="WON-jG-Hh5" id="fPa-KI-6F8"/>
+                        <outlet property="banjoProgressView" destination="z1V-CR-alB" id="lHA-Bd-E81"/>
+                        <outlet property="bassProgressView" destination="Ei6-fF-Z0T" id="Uv9-Dn-urp"/>
+                        <outlet property="electricProgressView" destination="LqK-2o-hkr" id="Wj6-JM-wkO"/>
+                        <outlet property="guitareProgressView" destination="Q9j-Ao-yrf" id="1vO-XB-WGP"/>
+                        <outlet property="message" destination="iqU-0Y-JNI" id="cgW-Aa-xKJ"/>
+                        <outlet property="username" destination="kB2-9L-vu5" id="EiG-lQ-fi8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y33-pF-w4Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="702" y="124"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="01" width="130" height="204"/>
+        <image name="02" width="130" height="204"/>
+        <image name="03" width="130" height="204"/>
+        <image name="04" width="130" height="204"/>
+        <image name="banjo-311854_640" width="640" height="458"/>
+        <image name="bass-159703_640" width="320" height="640"/>
+        <image name="electric-guitar-154123_640" width="640" height="570"/>
+        <image name="guitar-31374_640" width="640" height="419"/>
+        <image name="vinyl-record-background" width="410" height="615"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="8gQ-H4-12A"/>
+    </inferredMetricsTieBreakers>
+</document>
