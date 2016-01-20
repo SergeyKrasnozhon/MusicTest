@@ -183,20 +183,6 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nig-Ve-cFL" userLabel="Container View">
                                 <rect key="frame" x="0.0" y="164" width="314" height="239"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q9j-Ao-yrf" userLabel="Guitar Progress View" customClass="MTProgressView">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="progress">
-                                                <integer key="value" value="100"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="progressAlpha">
-                                                <real key="value" value="0.69999999999999996"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="title" value="Guitare"/>
-                                            <userDefinedRuntimeAttribute type="image" keyPath="progressImage" value="04"/>
-                                        </userDefinedRuntimeAttributes>
-                                    </view>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LqK-2o-hkr" userLabel="Electric Progress View" customClass="MTProgressView">
                                         <rect key="frame" x="0.0" y="60" width="320" height="55"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -211,7 +197,7 @@
                                             <userDefinedRuntimeAttribute type="string" keyPath="title" value="Electric"/>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ei6-fF-Z0T" userLabel="Bass Progress View" customClass="MTProgressView">
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ei6-fF-Z0T" userLabel="Guitar Progress View" customClass="MTProgressView">
                                         <rect key="frame" x="0.0" y="122" width="320" height="55"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <userDefinedRuntimeAttributes>
@@ -221,7 +207,7 @@
                                             <userDefinedRuntimeAttribute type="number" keyPath="progress">
                                                 <integer key="value" value="60"/>
                                             </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="title" value="Bass"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="title" value="Guitare"/>
                                             <userDefinedRuntimeAttribute type="image" keyPath="progressImage" value="02"/>
                                         </userDefinedRuntimeAttributes>
                                     </view>
@@ -243,6 +229,20 @@
                                         <rect key="frame" x="142" y="101" width="37" height="37"/>
                                         <color key="color" red="1" green="0.90050859900000002" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
                                     </activityIndicatorView>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q9j-Ao-yrf" userLabel="Bass Progress View" customClass="MTProgressView">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="progress">
+                                                <integer key="value" value="100"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="progressAlpha">
+                                                <real key="value" value="0.69999999999999996"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="title" value="Bass"/>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="progressImage" value="04"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -309,9 +309,9 @@
                     <connections>
                         <outlet property="activityView" destination="WON-jG-Hh5" id="fPa-KI-6F8"/>
                         <outlet property="banjoProgressView" destination="z1V-CR-alB" id="lHA-Bd-E81"/>
-                        <outlet property="bassProgressView" destination="Ei6-fF-Z0T" id="Uv9-Dn-urp"/>
+                        <outlet property="bassProgressView" destination="Q9j-Ao-yrf" id="9q2-lU-hwV"/>
                         <outlet property="electricProgressView" destination="LqK-2o-hkr" id="Wj6-JM-wkO"/>
-                        <outlet property="guitareProgressView" destination="Q9j-Ao-yrf" id="1vO-XB-WGP"/>
+                        <outlet property="guitareProgressView" destination="Ei6-fF-Z0T" id="AfC-h5-wUl"/>
                         <outlet property="message" destination="iqU-0Y-JNI" id="cgW-Aa-xKJ"/>
                         <outlet property="username" destination="kB2-9L-vu5" id="EiG-lQ-fi8"/>
                     </connections>
